@@ -1,0 +1,2746 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One|Pacifico");
+
+.mobile {
+  position: fixed;
+  top: 50px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 90px;
+}
+
+h1,
+h2,
+.party-emoji {
+  display: none;
+}
+
+@media screen and (min-width: 670px) {
+  .mobile {
+    display: none;
+  }
+
+  h1,
+  h2,
+  .party-emoji {
+    display: block;
+  }
+
+  body {
+    background: linear-gradient(
+      to right,
+      #e2b8f7,
+      #d4bafa,
+      #c7bcfb,
+      #b9befb,
+      #acbff9
+    );
+    cursor: crosshair;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    font-family: "Pacifico", cursive;
+  }
+
+  h1 {
+  position: fixed;
+  top: 120px;
+  z-index: 12;
+
+  width: 100%;
+  margin: 0;
+
+  text-align: center;
+  font-family: "Concert One", cursive;
+  font-size: 90px;
+  font-weight: 400;
+  letter-spacing: 6px;
+
+  background: linear-gradient(
+    0deg,
+    #6a1b9a 0%,
+    #9c27b0 50%,
+    #5e35b1 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 3px 0 rgba(255, 255, 255, 0.75),
+    0 8px 18px rgba(73, 28, 110, 0.35);
+
+  filter: drop-shadow(
+    0 3px 5px rgba(255, 255, 255, 0.4)
+  );
+
+  pointer-events: none;
+}
+
+  .party-emoji {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  h2 {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    background: linear-gradient(
+      90deg,
+      rgba(233, 230, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  bokeh {
+    position: fixed;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 50%;
+    animation-name: explosion;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: cubic-bezier(0.84, 0.02, 1, 1);
+  }
+
+  bokeh:nth-child(1) {
+    background-color: #fc85e1;
+    transform: translate(36.20vw, 99.73vh);
+    animation-duration: 2.41s;
+    animation-delay: -2.47s;
+  }
+  bokeh:nth-child(2) {
+    background-color: #ef8d22;
+    transform: translate(86.11vw, 15.28vh);
+    animation-duration: 2.48s;
+    animation-delay: -3.40s;
+  }
+  bokeh:nth-child(3) {
+    background-color: #ef8d22;
+    transform: translate(38.48vw, 59.59vh);
+    animation-duration: 3.40s;
+    animation-delay: -1.26s;
+  }
+  bokeh:nth-child(4) {
+    background-color: #ef8d22;
+    transform: translate(68.03vw, 11.46vh);
+    animation-duration: 4.65s;
+    animation-delay: -3.75s;
+  }
+  bokeh:nth-child(5) {
+    background-color: #2bd8ff;
+    transform: translate(11.16vw, 43.48vh);
+    animation-duration: 3.36s;
+    animation-delay: -4.77s;
+  }
+  bokeh:nth-child(6) {
+    background-color: #2bd8ff;
+    transform: translate(97.19vw, 76.20vh);
+    animation-duration: 3.52s;
+    animation-delay: -0.53s;
+  }
+  bokeh:nth-child(7) {
+    background-color: #2bd8ff;
+    transform: translate(84.17vw, 50.77vh);
+    animation-duration: 2.60s;
+    animation-delay: -1.87s;
+  }
+  bokeh:nth-child(8) {
+    background-color: #feff28;
+    transform: translate(53.94vw, 77.86vh);
+    animation-duration: 3.59s;
+    animation-delay: -0.00s;
+  }
+  bokeh:nth-child(9) {
+    background-color: #2bd8ff;
+    transform: translate(48.86vw, 11.19vh);
+    animation-duration: 3.09s;
+    animation-delay: -4.93s;
+  }
+  bokeh:nth-child(10) {
+    background-color: #2bd8ff;
+    transform: translate(23.95vw, 24.09vh);
+    animation-duration: 3.70s;
+    animation-delay: -0.39s;
+  }
+  bokeh:nth-child(11) {
+    background-color: #fc85e1;
+    transform: translate(81.60vw, 97.80vh);
+    animation-duration: 3.60s;
+    animation-delay: -0.63s;
+  }
+  bokeh:nth-child(12) {
+    background-color: #fc85e1;
+    transform: translate(94.68vw, 16.51vh);
+    animation-duration: 3.58s;
+    animation-delay: -3.03s;
+  }
+  bokeh:nth-child(13) {
+    background-color: #feff28;
+    transform: translate(92.89vw, 75.53vh);
+    animation-duration: 4.07s;
+    animation-delay: -3.56s;
+  }
+  bokeh:nth-child(14) {
+    background-color: #fc85e1;
+    transform: translate(99.51vw, 64.99vh);
+    animation-duration: 3.31s;
+    animation-delay: -2.59s;
+  }
+  bokeh:nth-child(15) {
+    background-color: #ef8d22;
+    transform: translate(24.79vw, 6.40vh);
+    animation-duration: 2.06s;
+    animation-delay: -2.77s;
+  }
+  bokeh:nth-child(16) {
+    background-color: #feff28;
+    transform: translate(0.72vw, 70.78vh);
+    animation-duration: 2.18s;
+    animation-delay: -0.34s;
+  }
+  bokeh:nth-child(17) {
+    background-color: #ef8d22;
+    transform: translate(85.96vw, 7.09vh);
+    animation-duration: 2.71s;
+    animation-delay: -3.34s;
+  }
+  bokeh:nth-child(18) {
+    background-color: #feff28;
+    transform: translate(53.92vw, 72.34vh);
+    animation-duration: 4.65s;
+    animation-delay: -2.88s;
+  }
+  bokeh:nth-child(19) {
+    background-color: #feff28;
+    transform: translate(78.46vw, 80.75vh);
+    animation-duration: 2.57s;
+    animation-delay: -0.48s;
+  }
+  bokeh:nth-child(20) {
+    background-color: #fc85e1;
+    transform: translate(35.43vw, 41.11vh);
+    animation-duration: 4.59s;
+    animation-delay: -0.27s;
+  }
+  bokeh:nth-child(21) {
+    background-color: #ef8d22;
+    transform: translate(6.06vw, 72.82vh);
+    animation-duration: 4.40s;
+    animation-delay: -0.55s;
+  }
+  bokeh:nth-child(22) {
+    background-color: #feff28;
+    transform: translate(19.02vw, 44.86vh);
+    animation-duration: 3.27s;
+    animation-delay: -1.39s;
+  }
+  bokeh:nth-child(23) {
+    background-color: #feff28;
+    transform: translate(87.45vw, 7.54vh);
+    animation-duration: 4.42s;
+    animation-delay: -4.28s;
+  }
+  bokeh:nth-child(24) {
+    background-color: #ef8d22;
+    transform: translate(5.06vw, 99.93vh);
+    animation-duration: 4.51s;
+    animation-delay: -4.84s;
+  }
+  bokeh:nth-child(25) {
+    background-color: #feff28;
+    transform: translate(16.63vw, 48.56vh);
+    animation-duration: 2.64s;
+    animation-delay: -2.01s;
+  }
+  bokeh:nth-child(26) {
+    background-color: #ef8d22;
+    transform: translate(16.46vw, 0.22vh);
+    animation-duration: 3.17s;
+    animation-delay: -4.63s;
+  }
+  bokeh:nth-child(27) {
+    background-color: #fc85e1;
+    transform: translate(28.52vw, 69.66vh);
+    animation-duration: 4.19s;
+    animation-delay: -3.92s;
+  }
+  bokeh:nth-child(28) {
+    background-color: #fc85e1;
+    transform: translate(15.48vw, 29.67vh);
+    animation-duration: 4.91s;
+    animation-delay: -2.90s;
+  }
+  bokeh:nth-child(29) {
+    background-color: #ef8d22;
+    transform: translate(74.80vw, 5.72vh);
+    animation-duration: 3.75s;
+    animation-delay: -2.51s;
+  }
+  bokeh:nth-child(30) {
+    background-color: #feff28;
+    transform: translate(5.69vw, 50.78vh);
+    animation-duration: 4.55s;
+    animation-delay: -0.34s;
+  }
+  bokeh:nth-child(31) {
+    background-color: #ef8d22;
+    transform: translate(67.52vw, 23.52vh);
+    animation-duration: 2.36s;
+    animation-delay: -4.45s;
+  }
+  bokeh:nth-child(32) {
+    background-color: #feff28;
+    transform: translate(57.89vw, 3.97vh);
+    animation-duration: 2.25s;
+    animation-delay: -3.29s;
+  }
+  bokeh:nth-child(33) {
+    background-color: #2bd8ff;
+    transform: translate(93.47vw, 20.43vh);
+    animation-duration: 4.15s;
+    animation-delay: -1.19s;
+  }
+  bokeh:nth-child(34) {
+    background-color: #fc85e1;
+    transform: translate(13.09vw, 64.55vh);
+    animation-duration: 3.37s;
+    animation-delay: -4.65s;
+  }
+  bokeh:nth-child(35) {
+    background-color: #ef8d22;
+    transform: translate(0.93vw, 62.12vh);
+    animation-duration: 3.69s;
+    animation-delay: -0.50s;
+  }
+  bokeh:nth-child(36) {
+    background-color: #feff28;
+    transform: translate(50.59vw, 13.25vh);
+    animation-duration: 3.05s;
+    animation-delay: -0.34s;
+  }
+  bokeh:nth-child(37) {
+    background-color: #feff28;
+    transform: translate(36.95vw, 15.77vh);
+    animation-duration: 4.50s;
+    animation-delay: -3.52s;
+  }
+  bokeh:nth-child(38) {
+    background-color: #ef8d22;
+    transform: translate(66.79vw, 55.46vh);
+    animation-duration: 4.80s;
+    animation-delay: -0.52s;
+  }
+  bokeh:nth-child(39) {
+    background-color: #feff28;
+    transform: translate(26.45vw, 88.97vh);
+    animation-duration: 4.23s;
+    animation-delay: -0.78s;
+  }
+  bokeh:nth-child(40) {
+    background-color: #2bd8ff;
+    transform: translate(60.48vw, 71.76vh);
+    animation-duration: 2.61s;
+    animation-delay: -3.17s;
+  }
+  bokeh:nth-child(41) {
+    background-color: #2bd8ff;
+    transform: translate(50.54vw, 25.11vh);
+    animation-duration: 4.72s;
+    animation-delay: -0.25s;
+  }
+  bokeh:nth-child(42) {
+    background-color: #fc85e1;
+    transform: translate(82.93vw, 4.41vh);
+    animation-duration: 3.00s;
+    animation-delay: -0.65s;
+  }
+  bokeh:nth-child(43) {
+    background-color: #2bd8ff;
+    transform: translate(16.16vw, 44.18vh);
+    animation-duration: 4.12s;
+    animation-delay: -2.80s;
+  }
+  bokeh:nth-child(44) {
+    background-color: #ef8d22;
+    transform: translate(7.52vw, 88.31vh);
+    animation-duration: 4.71s;
+    animation-delay: -2.73s;
+  }
+  bokeh:nth-child(45) {
+    background-color: #2bd8ff;
+    transform: translate(58.25vw, 14.81vh);
+    animation-duration: 2.38s;
+    animation-delay: -1.54s;
+  }
+  bokeh:nth-child(46) {
+    background-color: #ef8d22;
+    transform: translate(89.89vw, 21.01vh);
+    animation-duration: 2.75s;
+    animation-delay: -0.51s;
+  }
+  bokeh:nth-child(47) {
+    background-color: #fc85e1;
+    transform: translate(97.38vw, 74.95vh);
+    animation-duration: 4.78s;
+    animation-delay: -1.18s;
+  }
+  bokeh:nth-child(48) {
+    background-color: #feff28;
+    transform: translate(97.62vw, 81.08vh);
+    animation-duration: 4.64s;
+    animation-delay: -0.12s;
+  }
+  bokeh:nth-child(49) {
+    background-color: #2bd8ff;
+    transform: translate(78.24vw, 41.17vh);
+    animation-duration: 4.01s;
+    animation-delay: -3.68s;
+  }
+  bokeh:nth-child(50) {
+    background-color: #feff28;
+    transform: translate(26.68vw, 78.74vh);
+    animation-duration: 2.32s;
+    animation-delay: -4.36s;
+  }
+  bokeh:nth-child(51) {
+    background-color: #fc85e1;
+    transform: translate(22.24vw, 81.66vh);
+    animation-duration: 3.38s;
+    animation-delay: -1.53s;
+  }
+  bokeh:nth-child(52) {
+    background-color: #feff28;
+    transform: translate(22.29vw, 66.00vh);
+    animation-duration: 3.20s;
+    animation-delay: -1.39s;
+  }
+  bokeh:nth-child(53) {
+    background-color: #ef8d22;
+    transform: translate(96.69vw, 27.91vh);
+    animation-duration: 3.92s;
+    animation-delay: -2.00s;
+  }
+  bokeh:nth-child(54) {
+    background-color: #2bd8ff;
+    transform: translate(93.92vw, 11.53vh);
+    animation-duration: 4.91s;
+    animation-delay: -0.89s;
+  }
+  bokeh:nth-child(55) {
+    background-color: #2bd8ff;
+    transform: translate(3.83vw, 59.66vh);
+    animation-duration: 3.04s;
+    animation-delay: -3.93s;
+  }
+  bokeh:nth-child(56) {
+    background-color: #fc85e1;
+    transform: translate(60.62vw, 51.14vh);
+    animation-duration: 3.16s;
+    animation-delay: -2.88s;
+  }
+  bokeh:nth-child(57) {
+    background-color: #2bd8ff;
+    transform: translate(4.44vw, 43.61vh);
+    animation-duration: 3.56s;
+    animation-delay: -4.03s;
+  }
+  bokeh:nth-child(58) {
+    background-color: #feff28;
+    transform: translate(36.42vw, 7.00vh);
+    animation-duration: 3.99s;
+    animation-delay: -1.65s;
+  }
+  bokeh:nth-child(59) {
+    background-color: #2bd8ff;
+    transform: translate(66.34vw, 12.46vh);
+    animation-duration: 4.70s;
+    animation-delay: -2.54s;
+  }
+  bokeh:nth-child(60) {
+    background-color: #fc85e1;
+    transform: translate(32.62vw, 69.72vh);
+    animation-duration: 3.66s;
+    animation-delay: -0.96s;
+  }
+  bokeh:nth-child(61) {
+    background-color: #fc85e1;
+    transform: translate(67.73vw, 90.28vh);
+    animation-duration: 3.85s;
+    animation-delay: -1.50s;
+  }
+  bokeh:nth-child(62) {
+    background-color: #ef8d22;
+    transform: translate(30.39vw, 21.02vh);
+    animation-duration: 4.36s;
+    animation-delay: -3.03s;
+  }
+  bokeh:nth-child(63) {
+    background-color: #2bd8ff;
+    transform: translate(46.50vw, 44.22vh);
+    animation-duration: 2.64s;
+    animation-delay: -2.37s;
+  }
+  bokeh:nth-child(64) {
+    background-color: #feff28;
+    transform: translate(65.89vw, 28.38vh);
+    animation-duration: 3.99s;
+    animation-delay: -3.10s;
+  }
+  bokeh:nth-child(65) {
+    background-color: #ef8d22;
+    transform: translate(81.84vw, 75.11vh);
+    animation-duration: 4.02s;
+    animation-delay: -1.12s;
+  }
+  bokeh:nth-child(66) {
+    background-color: #feff28;
+    transform: translate(14.74vw, 4.62vh);
+    animation-duration: 4.95s;
+    animation-delay: -3.06s;
+  }
+  bokeh:nth-child(67) {
+    background-color: #ef8d22;
+    transform: translate(45.54vw, 88.61vh);
+    animation-duration: 3.73s;
+    animation-delay: -3.59s;
+  }
+  bokeh:nth-child(68) {
+    background-color: #fc85e1;
+    transform: translate(49.44vw, 24.40vh);
+    animation-duration: 3.97s;
+    animation-delay: -0.03s;
+  }
+  bokeh:nth-child(69) {
+    background-color: #ef8d22;
+    transform: translate(77.84vw, 21.88vh);
+    animation-duration: 4.41s;
+    animation-delay: -3.48s;
+  }
+  bokeh:nth-child(70) {
+    background-color: #fc85e1;
+    transform: translate(5.02vw, 24.92vh);
+    animation-duration: 4.55s;
+    animation-delay: -2.28s;
+  }
+  bokeh:nth-child(71) {
+    background-color: #fc85e1;
+    transform: translate(66.76vw, 98.79vh);
+    animation-duration: 3.79s;
+    animation-delay: -4.75s;
+  }
+  bokeh:nth-child(72) {
+    background-color: #fc85e1;
+    transform: translate(61.27vw, 71.93vh);
+    animation-duration: 3.51s;
+    animation-delay: -4.15s;
+  }
+  bokeh:nth-child(73) {
+    background-color: #fc85e1;
+    transform: translate(89.72vw, 74.37vh);
+    animation-duration: 3.42s;
+    animation-delay: -1.30s;
+  }
+  bokeh:nth-child(74) {
+    background-color: #feff28;
+    transform: translate(83.99vw, 27.73vh);
+    animation-duration: 4.33s;
+    animation-delay: -2.42s;
+  }
+  bokeh:nth-child(75) {
+    background-color: #feff28;
+    transform: translate(27.46vw, 7.75vh);
+    animation-duration: 2.86s;
+    animation-delay: -1.36s;
+  }
+  bokeh:nth-child(76) {
+    background-color: #2bd8ff;
+    transform: translate(89.30vw, 8.06vh);
+    animation-duration: 2.45s;
+    animation-delay: -1.92s;
+  }
+  bokeh:nth-child(77) {
+    background-color: #feff28;
+    transform: translate(70.64vw, 6.42vh);
+    animation-duration: 3.22s;
+    animation-delay: -2.71s;
+  }
+  bokeh:nth-child(78) {
+    background-color: #fc85e1;
+    transform: translate(6.23vw, 83.29vh);
+    animation-duration: 3.17s;
+    animation-delay: -3.85s;
+  }
+  bokeh:nth-child(79) {
+    background-color: #ef8d22;
+    transform: translate(85.67vw, 76.56vh);
+    animation-duration: 3.14s;
+    animation-delay: -0.03s;
+  }
+  bokeh:nth-child(80) {
+    background-color: #2bd8ff;
+    transform: translate(29.86vw, 39.00vh);
+    animation-duration: 4.67s;
+    animation-delay: -4.18s;
+  }
+  bokeh:nth-child(81) {
+    background-color: #feff28;
+    transform: translate(48.82vw, 27.29vh);
+    animation-duration: 3.46s;
+    animation-delay: -1.94s;
+  }
+  bokeh:nth-child(82) {
+    background-color: #fc85e1;
+    transform: translate(72.42vw, 84.05vh);
+    animation-duration: 4.76s;
+    animation-delay: -4.90s;
+  }
+  bokeh:nth-child(83) {
+    background-color: #ef8d22;
+    transform: translate(90.69vw, 59.19vh);
+    animation-duration: 3.99s;
+    animation-delay: -0.42s;
+  }
+  bokeh:nth-child(84) {
+    background-color: #fc85e1;
+    transform: translate(13.57vw, 46.17vh);
+    animation-duration: 2.15s;
+    animation-delay: -1.90s;
+  }
+  bokeh:nth-child(85) {
+    background-color: #feff28;
+    transform: translate(45.47vw, 33.75vh);
+    animation-duration: 4.64s;
+    animation-delay: -1.39s;
+  }
+  bokeh:nth-child(86) {
+    background-color: #fc85e1;
+    transform: translate(25.23vw, 8.19vh);
+    animation-duration: 2.06s;
+    animation-delay: -2.70s;
+  }
+  bokeh:nth-child(87) {
+    background-color: #2bd8ff;
+    transform: translate(22.42vw, 6.86vh);
+    animation-duration: 4.87s;
+    animation-delay: -0.20s;
+  }
+  bokeh:nth-child(88) {
+    background-color: #ef8d22;
+    transform: translate(94.96vw, 19.94vh);
+    animation-duration: 2.06s;
+    animation-delay: -0.76s;
+  }
+  bokeh:nth-child(89) {
+    background-color: #feff28;
+    transform: translate(47.36vw, 11.44vh);
+    animation-duration: 4.84s;
+    animation-delay: -2.33s;
+  }
+  bokeh:nth-child(90) {
+    background-color: #2bd8ff;
+    transform: translate(76.69vw, 16.78vh);
+    animation-duration: 3.82s;
+    animation-delay: -3.74s;
+  }
+  bokeh:nth-child(91) {
+    background-color: #ef8d22;
+    transform: translate(77.78vw, 16.38vh);
+    animation-duration: 2.93s;
+    animation-delay: -2.89s;
+  }
+  bokeh:nth-child(92) {
+    background-color: #2bd8ff;
+    transform: translate(57.58vw, 90.80vh);
+    animation-duration: 3.13s;
+    animation-delay: -4.71s;
+  }
+  bokeh:nth-child(93) {
+    background-color: #feff28;
+    transform: translate(7.60vw, 69.06vh);
+    animation-duration: 3.88s;
+    animation-delay: -0.51s;
+  }
+  bokeh:nth-child(94) {
+    background-color: #2bd8ff;
+    transform: translate(85.03vw, 60.04vh);
+    animation-duration: 2.36s;
+    animation-delay: -4.92s;
+  }
+  bokeh:nth-child(95) {
+    background-color: #ef8d22;
+    transform: translate(34.72vw, 42.84vh);
+    animation-duration: 3.11s;
+    animation-delay: -2.53s;
+  }
+  bokeh:nth-child(96) {
+    background-color: #2bd8ff;
+    transform: translate(1.27vw, 42.01vh);
+    animation-duration: 3.47s;
+    animation-delay: -2.17s;
+  }
+  bokeh:nth-child(97) {
+    background-color: #2bd8ff;
+    transform: translate(63.56vw, 82.87vh);
+    animation-duration: 4.12s;
+    animation-delay: -2.18s;
+  }
+  bokeh:nth-child(98) {
+    background-color: #2bd8ff;
+    transform: translate(61.59vw, 91.96vh);
+    animation-duration: 4.32s;
+    animation-delay: -2.32s;
+  }
+  bokeh:nth-child(99) {
+    background-color: #2bd8ff;
+    transform: translate(32.23vw, 24.55vh);
+    animation-duration: 4.80s;
+    animation-delay: -1.39s;
+  }
+  bokeh:nth-child(100) {
+    background-color: #fc85e1;
+    transform: translate(24.39vw, 46.47vh);
+    animation-duration: 3.83s;
+    animation-delay: -1.89s;
+  }
+
+  @keyframes explosion {
+    0% {
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translate(50vw, 100vh);
+    }
+  }
+
+  .cake {
+    position: relative;
+    top: 250px;
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    background: #f9fdff;
+    border-radius: 100%;
+    transform: translateZ(100px);
+    box-shadow:
+      0 4px 0 #f4f9fd,
+      0 8px 0 #dba9ff,
+      0 12px 0 #fec3b3,
+      0 16px 0 #f7f6fb,
+      0 20px 0 #f7f6fb,
+      0 24px 0 #f7f6fb,
+      0 28px 0 #f7f6fb,
+      0 32px 0 #fea0bb,
+      0 36px 0 #fea0bb,
+      0 40px 0 #9cef9d,
+      0 44px 0 #9cef9d,
+      0 48px 0 #f7f6fb,
+      0 52px 0 #f7f6fb,
+      0 56px 0 #f7f6fb,
+      0 60px 0 #f7f6fb,
+      0 64px 0 #f7f6fb,
+      0 68px 0 #dfa5fc,
+      0 72px 0 #dfa5fc,
+      0 76px 0 #fafffe,
+      0 80px 0 #fafffe;
+  }
+
+  .plate {
+    position: absolute;
+    top: 380px;
+    bottom: -95px;
+    left: 50%;
+    width: 300px;
+    height: 90px;
+    margin-left: -150px;
+    border-radius: 100%;
+    background: radial-gradient(
+      ellipse closest-side at center,
+      rgba(8, 199, 254, 1) 0%,
+      rgba(4, 215, 242, 1) 71%,
+      rgba(2, 255, 208, 1) 100%
+    );
+    box-shadow:
+      0 3px 0 #00e2e1,
+      0 6px 0 #00d3fb;
+    transform: translateZ(80px);
+  }
+
+  .candle {
+    position: relative;
+    top: 280px;
+    width: 12px;
+    height: 50px;
+    margin: auto;
+    background: linear-gradient(
+      0deg,
+      rgba(183, 244, 167, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-radius: 4px;
+    transform: translateZ(120px);
+  }
+
+  #flame {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .lit {
+    top: -34px;
+    width: 15px;
+    height: 35px;
+    margin: auto;
+    background: linear-gradient(to bottom, #fff6d9, #fbc36c);
+    border-top-left-radius: 10px 35px;
+    border-top-right-radius: 10px 35px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    box-shadow: 0 0 17px 7px rgba(251, 246, 190, 0.71);
+    transform-origin: bottom;
+    animation: flicker 1s ease-in-out alternate infinite;
+  }
+
+  @keyframes flicker {
+    0% {
+      transform: skewX(5deg);
+      box-shadow: 0 0 17px 10px rgba(251, 246, 190, 0.71);
+    }
+
+    25% {
+      transform: skewX(-5deg);
+      box-shadow: 0 0 17px 5px rgba(251, 246, 190, 0.71);
+    }
+
+    50% {
+      transform: skewX(10deg);
+      box-shadow: 0 0 17px 7px rgba(251, 246, 190, 0.71);
+    }
+
+    75% {
+      transform: skewX(-10deg);
+      box-shadow: 0 0 17px 5px rgba(251, 246, 190, 0.71);
+    }
+
+    100% {
+      transform: skewX(5deg);
+      box-shadow: 0 0 17px 10px rgba(251, 246, 190, 0.71);
+    }
+  }
+
+  .pyro > .before,
+  .pyro > .after {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow:
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff,
+      0 0 #fff;
+    animation:
+      1s bang ease-out infinite backwards,
+      1s gravity ease-in infinite backwards,
+      5s position linear infinite backwards;
+  }
+
+  .pyro > .after {
+    animation-delay: 1.25s, 1.25s, 1.25s;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+  }
+
+  @keyframes bang {
+    to {
+      box-shadow:
+        78px -358.67px hsl(13, 100%, 50%),
+        130px -275.67px hsl(126, 100%, 50%),
+        -135px -344.67px hsl(53, 100%, 50%),
+        97px -36.67px hsl(280, 100%, 50%),
+        -205px -113.67px hsl(217, 100%, 50%),
+        -233px -400.67px hsl(48, 100%, 50%),
+        -138px -296.67px hsl(259, 100%, 50%),
+        59px -402.67px hsl(288, 100%, 50%),
+        -148px -49.67px hsl(333, 100%, 50%),
+        110px -136.67px hsl(215, 100%, 50%),
+        -137px -186.67px hsl(302, 100%, 50%),
+        -107px -1.67px hsl(4, 100%, 50%),
+        139px -3.67px hsl(82, 100%, 50%),
+        108px -199.67px hsl(175, 100%, 50%),
+        -107px -336.67px hsl(111, 100%, 50%),
+        241px -25.67px hsl(173, 100%, 50%),
+        -197px -368.67px hsl(195, 100%, 50%),
+        -200px -232.67px hsl(177, 100%, 50%),
+        60px -280.67px hsl(23, 100%, 50%),
+        124px -180.67px hsl(275, 100%, 50%),
+        -186px 82.33px hsl(194, 100%, 50%),
+        -209px -133.67px hsl(151, 100%, 50%),
+        175px -94.67px hsl(317, 100%, 50%),
+        204px 25.33px hsl(186, 100%, 50%),
+        46px -317.67px hsl(36, 100%, 50%),
+        -226px -77.67px hsl(117, 100%, 50%),
+        146px -267.67px hsl(41, 100%, 50%),
+        188px -296.67px hsl(52, 100%, 50%),
+        -55px -273.67px hsl(233, 100%, 50%),
+        76px 11.33px hsl(187, 100%, 50%),
+        -166px -226.67px hsl(182, 100%, 50%),
+        -142px -72.67px hsl(137, 100%, 50%),
+        110px 63.33px hsl(350, 100%, 50%),
+        82px -379.67px hsl(312, 100%, 50%),
+        76px -328.67px hsl(274, 100%, 50%),
+        124px -290.67px hsl(84, 100%, 50%),
+        -13px -221.67px hsl(139, 100%, 50%),
+        224px -88.67px hsl(353, 100%, 50%),
+        36px -303.67px hsl(351, 100%, 50%),
+        -83px 15.33px hsl(29, 100%, 50%),
+        -132px 4.33px hsl(17, 100%, 50%),
+        163px -254.67px hsl(206, 100%, 50%),
+        -112px -382.67px hsl(109, 100%, 50%),
+        218px 66.33px hsl(291, 100%, 50%),
+        199px -48.67px hsl(162, 100%, 50%),
+        -141px -80.67px hsl(256, 100%, 50%),
+        -47px 36.33px hsl(330, 100%, 50%),
+        -15px -342.67px hsl(136, 100%, 50%),
+        -178px -289.67px hsl(288, 100%, 50%),
+        26px -281.67px hsl(300, 100%, 50%),
+        -30px 43.33px hsl(299, 100%, 50%);
+    }
+  }
+
+  @keyframes gravity {
+    to {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes position {
+    0%,
+    19.9% {
+      margin-top: 10%;
+      margin-left: 40%;
+    }
+
+    20%,
+    39.9% {
+      margin-top: 40%;
+      margin-left: 30%;
+    }
+
+    40%,
+    59.9% {
+      margin-top: 20%;
+      margin-left: 70%;
+    }
+
+    60%,
+    79.9% {
+      margin-top: 30%;
+      margin-left: 20%;
+    }
+
+    80%,
+    99.9% {
+      margin-top: 30%;
+      margin-left: 80%;
+    }
+  }
+}
+
+/* =========================================================
+   AJUSTES GENERALES Y GUIRNALDA DE FOTOGRAFÍAS
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    #e2b8f7,
+    #d4bafa,
+    #c7bcfb,
+    #b9befb,
+    #acbff9
+  );
+}
+
+.mobile {
+  left: 0;
+  z-index: 100;
+  padding: 24px;
+  font-family: "Concert One", cursive;
+  font-size: clamp(34px, 12vw, 70px);
+  color: #69458a;
+}
+
+.photo-garland {
+  display: none;
+}
+
+/* Evita que las partículas bloqueen clics o cubran el contenido. */
+bokeh,
+.pyro {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 670px) {
+  body {
+    position: relative;
+  }
+
+  bokeh {
+    z-index: 1;
+  }
+
+  .pyro {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+  }
+
+  /* Contenedor de la decoración colgante. */
+  .photo-garland {
+    position: fixed;
+    top: 6px;
+    left: 50%;
+    z-index: 30;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: min(960px, 96vw);
+    height: 190px;
+    padding: 0 22px;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  /* Cuerda principal de la guirnalda. */
+  .photo-garland::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 2%;
+    width: 96%;
+    height: 54px;
+    border-top: 3px solid rgba(255, 255, 255, 0.96);
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 2px rgba(83, 43, 108, 0.25));
+  }
+
+  .hanging-photo {
+    --rotation: 0deg;
+    position: relative;
+    top: 51px;
+    flex: 0 0 auto;
+    width: clamp(86px, 11vw, 128px);
+    margin: 0;
+    padding: 7px 7px 19px;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow:
+      0 11px 27px rgba(70, 38, 105, 0.26),
+      0 3px 8px rgba(70, 38, 105, 0.16);
+    transform-origin: 50% -38px;
+    animation: photo-sway 3.5s ease-in-out infinite alternate;
+  }
+
+  /* Hilo que sostiene cada fotografía. */
+  .hanging-photo::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 2px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 2px rgba(82, 53, 105, 0.28);
+    transform: translateX(-50%);
+  }
+
+  /* Pinza decorativa. */
+  .hanging-photo::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 18px;
+    height: 10px;
+    border-radius: 3px;
+    background: #f6d38a;
+    box-shadow: 0 2px 4px rgba(74, 44, 91, 0.25);
+    transform: translateX(-50%);
+  }
+
+  .hanging-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+  }
+
+  .photo-1 {
+    --rotation: -7deg;
+    animation-delay: -1s;
+  }
+
+  .photo-2 {
+    --rotation: 4deg;
+    animation-delay: -2.1s;
+  }
+
+  .photo-3 {
+    --rotation: -4deg;
+    animation-delay: -0.5s;
+  }
+
+  .photo-4 {
+    --rotation: 7deg;
+    animation-delay: -2.7s;
+  }
+
+  /* Globos situados alrededor de las fotografías. */
+  .balloon {
+    --balloon-color: #fc85e1;
+    position: absolute;
+    top: -28px;
+    z-index: 3;
+    display: block;
+    width: 27px;
+    height: 35px;
+    background: var(--balloon-color);
+    border-radius: 50% 50% 47% 47%;
+    box-shadow:
+      inset -5px -7px 8px rgba(0, 0, 0, 0.12),
+      inset 5px 5px 8px rgba(255, 255, 255, 0.32),
+      0 4px 8px rgba(79, 47, 104, 0.18);
+    animation: balloon-float 2.4s ease-in-out infinite alternate;
+  }
+
+  .balloon:nth-of-type(1) {
+    left: -23px;
+  }
+
+  .balloon:nth-of-type(2) {
+    top: -18px;
+    right: -23px;
+    animation-delay: -1.2s;
+  }
+
+  .balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 7px solid var(--balloon-color);
+    transform: translateX(-50%);
+  }
+
+  .balloon::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    width: 1px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.78);
+    transform: rotate(7deg);
+    transform-origin: top;
+  }
+
+  .balloon-pink {
+    --balloon-color: #fc85e1;
+  }
+
+  .balloon-blue {
+    --balloon-color: #2bd8ff;
+  }
+
+  .balloon-purple {
+    --balloon-color: #b983ff;
+  }
+
+  .balloon-yellow {
+    --balloon-color: #feff28;
+  }
+
+  /* Reacomodo del contenido para dejar espacio a las fotografías. */
+  h2 {
+    top: 186px;
+    z-index: 12;
+    margin: 0;
+    font-size: clamp(46px, 6vw, 78px);
+    line-height: 1.05;
+    text-shadow: 0 3px 10px rgba(103, 71, 137, 0.16);
+    pointer-events: none;
+  }
+
+  .party-emoji {
+    top: 247px;
+    z-index: 12;
+    margin: 0;
+    font-size: clamp(42px, 5vw, 58px);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  h1 {
+    top: 298px;
+    z-index: 12;
+    margin: 0;
+    font-size: clamp(50px, 7vw, 88px);
+    line-height: 1.05;
+    filter: drop-shadow(0 3px 5px rgba(103, 71, 137, 0.14));
+    pointer-events: none;
+  }
+
+  .candle {
+    top: 443px;
+    z-index: 11;
+  }
+
+  .cake {
+    top: 413px;
+    z-index: 10;
+  }
+
+  .plate {
+    top: 543px;
+    z-index: 9;
+  }
+
+  @keyframes photo-sway {
+    from {
+      transform: rotate(var(--rotation)) translateY(0);
+    }
+
+    to {
+      transform: rotate(calc(var(--rotation) + 3deg)) translateY(4px);
+    }
+  }
+
+  @keyframes balloon-float {
+    from {
+      transform: translateY(0) rotate(-4deg);
+    }
+
+    to {
+      transform: translateY(-7px) rotate(4deg);
+    }
+  }
+}
+
+/* Ajustes para computadoras con poca altura disponible. */
+@media screen and (min-width: 670px) and (max-height: 700px) {
+  .photo-garland {
+    transform: translateX(-50%) scale(0.86);
+    transform-origin: top center;
+  }
+
+  h2 {
+    top: 154px;
+  }
+
+  .party-emoji {
+    top: 207px;
+  }
+
+  h1 {
+    top: 251px;
+  }
+
+  .candle {
+    top: 387px;
+  }
+
+  .cake {
+    top: 357px;
+  }
+
+  .plate {
+    top: 487px;
+  }
+}
+
+
+/* =========================================================
+   VERSIÓN RESPONSIVA PARA CELULARES Y TABLETS PEQUEÑAS
+   ========================================================= */
+
+/* Ya no mostramos el mensaje que bloqueaba la versión móvil. */
+.mobile {
+  display: none !important;
+}
+
+/* En dispositivos móviles se muestra la tarjeta completa. */
+@media screen and (max-width: 669px) {
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  body {
+    position: relative;
+    min-height: 100svh;
+    overflow: hidden;
+    background: linear-gradient(
+      135deg,
+      #edc7f7 0%,
+      #cabdfb 48%,
+      #a8c6fa 100%
+    );
+    font-family: "Pacifico", cursive;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  h1,
+  h2,
+  .party-emoji {
+    display: block;
+  }
+
+  /*
+   * En móvil se ocultan las partículas bokeh pesadas.
+   * Los fuegos artificiales siguen funcionando en escritorio.
+   */
+  bokeh,
+  .pyro {
+    display: none;
+  }
+
+  /* ==================== GUIRNALDA ==================== */
+
+  .photo-garland {
+    position: fixed;
+    top: 4px;
+    left: 50%;
+    z-index: 30;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    gap: clamp(2px, 1.7vw, 10px);
+
+    width: min(100%, 680px);
+    height: 138px;
+    padding: 0 clamp(8px, 3vw, 20px);
+
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .photo-garland::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 3%;
+
+    width: 94%;
+    height: 42px;
+
+    border-top: 2px solid rgba(255, 255, 255, 0.96);
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 2px rgba(83, 43, 108, 0.22));
+  }
+
+  .hanging-photo {
+    --rotation: 0deg;
+
+    position: relative;
+    top: 41px;
+    justify-self: center;
+
+    width: clamp(62px, 18vw, 98px);
+    margin: 0;
+    padding:
+      clamp(4px, 1vw, 6px)
+      clamp(4px, 1vw, 6px)
+      clamp(11px, 2.6vw, 17px);
+
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    border-radius: clamp(6px, 1.8vw, 10px);
+
+    box-shadow:
+      0 8px 18px rgba(70, 38, 105, 0.24),
+      0 2px 5px rgba(70, 38, 105, 0.15);
+
+    transform-origin: 50% -30px;
+    animation: mobile-photo-sway 3.2s ease-in-out infinite alternate;
+  }
+
+  .hanging-photo::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    width: 1.5px;
+    height: 34px;
+
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 0 2px rgba(82, 53, 105, 0.25);
+
+    transform: translateX(-50%);
+  }
+
+  .hanging-photo::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+
+    width: clamp(11px, 3vw, 16px);
+    height: clamp(6px, 1.7vw, 9px);
+
+    border-radius: 2px;
+    background: #f6d38a;
+    box-shadow: 0 2px 3px rgba(74, 44, 91, 0.22);
+
+    transform: translateX(-50%);
+  }
+
+  .hanging-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: clamp(4px, 1vw, 6px);
+  }
+
+  .photo-1 {
+    --rotation: -6deg;
+    animation-delay: -1s;
+  }
+
+  .photo-2 {
+    --rotation: 3deg;
+    animation-delay: -2.1s;
+  }
+
+  .photo-3 {
+    --rotation: -3deg;
+    animation-delay: -0.5s;
+  }
+
+  .photo-4 {
+    --rotation: 6deg;
+    animation-delay: -2.7s;
+  }
+
+  /* ==================== GLOBOS ==================== */
+
+  .balloon {
+    --balloon-color: #fc85e1;
+
+    position: absolute;
+    top: -20px;
+    z-index: 3;
+    display: block;
+
+    width: clamp(16px, 4.5vw, 23px);
+    height: clamp(21px, 6vw, 30px);
+
+    background: var(--balloon-color);
+    border-radius: 50% 50% 47% 47%;
+
+    box-shadow:
+      inset -3px -5px 5px rgba(0, 0, 0, 0.12),
+      inset 3px 3px 5px rgba(255, 255, 255, 0.32),
+      0 3px 6px rgba(79, 47, 104, 0.18);
+
+    animation: mobile-balloon-float 2.4s ease-in-out infinite alternate;
+  }
+
+  .balloon:nth-of-type(1) {
+    left: clamp(-17px, -3.8vw, -11px);
+  }
+
+  .balloon:nth-of-type(2) {
+    top: -14px;
+    right: clamp(-17px, -3.8vw, -11px);
+    animation-delay: -1.2s;
+  }
+
+  .balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 6px solid var(--balloon-color);
+
+    transform: translateX(-50%);
+  }
+
+  .balloon::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    width: 1px;
+    height: 32px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    transform: rotate(7deg);
+    transform-origin: top;
+  }
+
+  .balloon-pink {
+    --balloon-color: #fc85e1;
+  }
+
+  .balloon-blue {
+    --balloon-color: #2bd8ff;
+  }
+
+  .balloon-purple {
+    --balloon-color: #b983ff;
+  }
+
+  .balloon-yellow {
+    --balloon-color: #feff28;
+  }
+
+  /* ==================== TEXTOS ==================== */
+
+  h2 {
+    position: fixed;
+    top: clamp(150px, 22vh, 175px);
+    left: 0;
+    z-index: 12;
+
+    width: 100%;
+    margin: 0;
+    padding: 0 12px;
+
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: clamp(27px, 7.6vw, 46px);
+    font-weight: 400;
+    line-height: 1.08;
+
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(249, 240, 255, 0.98) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    filter: drop-shadow(0 4px 5px rgba(83, 44, 112, 0.24));
+    pointer-events: none;
+  }
+
+  .party-emoji {
+    position: fixed;
+    top: clamp(205px, 29vh, 235px);
+    left: 0;
+    z-index: 12;
+
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+    font-size: clamp(33px, 9vw, 50px);
+    line-height: 1;
+
+    filter: drop-shadow(0 4px 4px rgba(83, 44, 112, 0.22));
+    pointer-events: none;
+  }
+
+  h1 {
+    position: fixed;
+    top: clamp(250px, 36vh, 290px);
+    left: 0;
+    z-index: 12;
+
+    width: 100%;
+    margin: 0;
+    padding: 0 clamp(8px, 3vw, 18px);
+
+    text-align: center;
+    font-family: "Concert One", cursive;
+    font-size: clamp(34px, 10.4vw, 62px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: clamp(1px, 0.7vw, 4px);
+
+    background: linear-gradient(
+      0deg,
+      #5e238c 0%,
+      #8f36ad 52%,
+      #58378f 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    filter:
+      drop-shadow(0 2px 0 rgba(255, 255, 255, 0.72))
+      drop-shadow(0 7px 9px rgba(73, 28, 110, 0.26));
+
+    pointer-events: none;
+  }
+
+  /* ==================== PASTEL ==================== */
+
+  .cake {
+    position: fixed;
+    top: auto;
+    bottom: clamp(78px, 14vh, 112px);
+    left: 50%;
+    z-index: 10;
+
+    width: 200px;
+    height: 60px;
+    margin: 0;
+
+    background: #f9fdff;
+    border-radius: 100%;
+
+    box-shadow:
+      0 4px 0 #f4f9fd,
+      0 8px 0 #dba9ff,
+      0 12px 0 #fec3b3,
+      0 16px 0 #f7f6fb,
+      0 20px 0 #f7f6fb,
+      0 24px 0 #f7f6fb,
+      0 28px 0 #f7f6fb,
+      0 32px 0 #fea0bb,
+      0 36px 0 #fea0bb,
+      0 40px 0 #9cef9d,
+      0 44px 0 #9cef9d,
+      0 48px 0 #f7f6fb,
+      0 52px 0 #f7f6fb,
+      0 56px 0 #f7f6fb,
+      0 60px 0 #f7f6fb,
+      0 64px 0 #dfa5fc,
+      0 68px 0 #dfa5fc;
+
+    transform: translateX(-50%) scale(0.78);
+    transform-origin: bottom center;
+  }
+
+  .plate {
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: clamp(10px, 3vh, 25px);
+    left: 50%;
+    z-index: 9;
+
+    width: 300px;
+    height: 90px;
+    margin: 0;
+
+    border-radius: 100%;
+    background: radial-gradient(
+      ellipse closest-side at center,
+      rgba(8, 199, 254, 1) 0%,
+      rgba(4, 215, 242, 1) 71%,
+      rgba(2, 255, 208, 1) 100%
+    );
+
+    box-shadow:
+      0 3px 0 #00e2e1,
+      0 6px 0 #00d3fb;
+
+    transform: translateX(-50%) scale(0.78);
+    transform-origin: bottom center;
+  }
+
+  .candle {
+    position: fixed;
+    top: auto;
+    bottom: calc(clamp(78px, 14vh, 112px) + 48px);
+    left: 50%;
+    z-index: 11;
+
+    width: 12px;
+    height: 50px;
+    margin: 0;
+
+    background: linear-gradient(
+      0deg,
+      rgba(183, 244, 167, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+
+    border-radius: 4px;
+
+    transform: translateX(-50%) scale(0.84);
+    transform-origin: bottom center;
+  }
+
+  #flame {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .lit {
+    top: -34px;
+    width: 15px;
+    height: 35px;
+    margin: auto;
+
+    background: linear-gradient(to bottom, #fff6d9, #fbc36c);
+
+    border-top-left-radius: 10px 35px;
+    border-top-right-radius: 10px 35px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+
+    box-shadow: 0 0 17px 7px rgba(251, 246, 190, 0.71);
+
+    transform-origin: bottom;
+    animation: flicker 1s ease-in-out alternate infinite;
+  }
+
+  @keyframes mobile-photo-sway {
+    from {
+      transform: rotate(var(--rotation)) translateY(0);
+    }
+
+    to {
+      transform: rotate(calc(var(--rotation) + 2deg)) translateY(3px);
+    }
+  }
+
+  @keyframes mobile-balloon-float {
+    from {
+      transform: translateY(0) rotate(-4deg);
+    }
+
+    to {
+      transform: translateY(-5px) rotate(4deg);
+    }
+  }
+}
+
+/* Teléfonos especialmente bajos, por ejemplo en modo horizontal. */
+@media screen and (max-width: 669px) and (max-height: 620px) {
+  .photo-garland {
+    top: -4px;
+    transform: translateX(-50%) scale(0.83);
+    transform-origin: top center;
+  }
+
+  h2 {
+    top: 113px;
+  }
+
+  .party-emoji {
+    top: 157px;
+  }
+
+  h1 {
+    top: 195px;
+    font-size: clamp(31px, 8.5vw, 50px);
+  }
+
+  .candle {
+    bottom: 116px;
+  }
+
+  .cake {
+    bottom: 67px;
+  }
+
+  .plate {
+    bottom: 3px;
+  }
+}
+
+/* Tabletas pequeñas y ventanas angostas de escritorio. */
+@media screen and (min-width: 480px) and (max-width: 669px) {
+  .photo-garland {
+    height: 150px;
+  }
+
+  .hanging-photo {
+    width: clamp(82px, 16vw, 104px);
+  }
+
+  h2 {
+    font-size: clamp(38px, 7vw, 48px);
+  }
+
+  h1 {
+    font-size: clamp(48px, 9vw, 62px);
+  }
+
+  .cake,
+  .plate {
+    transform: translateX(-50%) scale(0.88);
+  }
+
+  .candle {
+    transform: translateX(-50%) scale(0.92);
+  }
+}
+
+/* =========================================================
+   FUEGOS ARTIFICIALES Y CONFETI EN CELULARES
+   ========================================================= */
+
+@media screen and (max-width: 669px) {
+  /*
+   * Este bloque está al final para sobrescribir el display:none
+   * usado anteriormente en la versión móvil.
+   */
+
+  .pyro {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    display: block;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .pyro > .before,
+  .pyro > .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 transparent;
+    will-change: box-shadow, transform, opacity, margin;
+    animation:
+      1.35s mobile-firework-bang ease-out infinite backwards,
+      1.35s mobile-firework-gravity ease-in infinite backwards,
+      5.4s mobile-firework-position linear infinite backwards;
+  }
+
+  .pyro > .after {
+    animation-delay: 1.15s, 1.15s, 1.15s;
+    animation-duration: 1.55s, 1.55s, 6.2s;
+  }
+
+  bokeh {
+    position: fixed;
+    top: -12vh;
+    left: var(--mobile-x, 50vw);
+    z-index: 3;
+    display: block;
+    width: var(--mobile-size, 6px);
+    height: var(--mobile-size, 6px);
+    border-radius: 50%;
+    background: var(--mobile-color, #fc85e1);
+    opacity: 0;
+    pointer-events: none;
+    will-change: transform, opacity;
+    animation:
+      mobile-confetti-fall
+      var(--mobile-duration, 6s)
+      linear
+      var(--mobile-delay, 0s)
+      infinite;
+  }
+
+  bokeh:nth-child(4n) {
+    border-radius: 2px;
+  }
+
+  bokeh:nth-child(5n) {
+    width: calc(var(--mobile-size, 6px) * 1.45);
+    height: calc(var(--mobile-size, 6px) * 0.62);
+    border-radius: 999px;
+  }
+
+  /*
+   * Se muestran 72 partículas en celular para conservar la animación
+   * sin sobrecargar demasiado el navegador.
+   */
+  bokeh:nth-child(n + 73) {
+    display: none;
+  }
+
+  bokeh:nth-child(1) {
+    --mobile-x: 51.69vw;
+    --mobile-drift: 15.55vw;
+    --mobile-duration: 7.96s;
+    --mobile-delay: -4.95s;
+    --mobile-size: 8.93px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 707deg;
+  }
+  bokeh:nth-child(2) {
+    --mobile-x: 31.52vw;
+    --mobile-drift: 14.07vw;
+    --mobile-duration: 5.60s;
+    --mobile-delay: -3.56s;
+    --mobile-size: 5.19px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 563deg;
+  }
+  bokeh:nth-child(3) {
+    --mobile-x: 68.57vw;
+    --mobile-drift: 12.10vw;
+    --mobile-duration: 5.15s;
+    --mobile-delay: -6.56s;
+    --mobile-size: 7.16px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 615deg;
+  }
+  bokeh:nth-child(4) {
+    --mobile-x: 35.81vw;
+    --mobile-drift: -7.89vw;
+    --mobile-duration: 6.51s;
+    --mobile-delay: -8.47s;
+    --mobile-size: 8.51px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 831deg;
+  }
+  bokeh:nth-child(5) {
+    --mobile-x: 55.62vw;
+    --mobile-drift: 10.64vw;
+    --mobile-duration: 8.11s;
+    --mobile-delay: -3.14s;
+    --mobile-size: 6.09px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 677deg;
+  }
+  bokeh:nth-child(6) {
+    --mobile-x: 80.15vw;
+    --mobile-drift: 6.55vw;
+    --mobile-duration: 7.30s;
+    --mobile-delay: -0.92s;
+    --mobile-size: 5.45px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 769deg;
+  }
+  bokeh:nth-child(7) {
+    --mobile-x: 83.06vw;
+    --mobile-drift: -13.73vw;
+    --mobile-duration: 6.21s;
+    --mobile-delay: -3.90s;
+    --mobile-size: 6.72px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 617deg;
+  }
+  bokeh:nth-child(8) {
+    --mobile-x: 77.42vw;
+    --mobile-drift: 3.63vw;
+    --mobile-duration: 5.88s;
+    --mobile-delay: -3.48s;
+    --mobile-size: 8.00px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 853deg;
+  }
+  bokeh:nth-child(9) {
+    --mobile-x: 42.79vw;
+    --mobile-drift: -15.49vw;
+    --mobile-duration: 7.51s;
+    --mobile-delay: -7.74s;
+    --mobile-size: 6.48px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 835deg;
+  }
+  bokeh:nth-child(10) {
+    --mobile-x: 42.88vw;
+    --mobile-drift: -13.03vw;
+    --mobile-duration: 6.96s;
+    --mobile-delay: -4.38s;
+    --mobile-size: 5.18px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 377deg;
+  }
+  bokeh:nth-child(11) {
+    --mobile-x: 32.54vw;
+    --mobile-drift: 16.12vw;
+    --mobile-duration: 4.84s;
+    --mobile-delay: -2.18s;
+    --mobile-size: 5.94px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 451deg;
+  }
+  bokeh:nth-child(12) {
+    --mobile-x: 4.69vw;
+    --mobile-drift: -0.10vw;
+    --mobile-duration: 5.79s;
+    --mobile-delay: -6.55s;
+    --mobile-size: 4.62px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 505deg;
+  }
+  bokeh:nth-child(13) {
+    --mobile-x: 27.46vw;
+    --mobile-drift: -2.40vw;
+    --mobile-duration: 6.59s;
+    --mobile-delay: -5.07s;
+    --mobile-size: 5.02px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 536deg;
+  }
+  bokeh:nth-child(14) {
+    --mobile-x: 21.21vw;
+    --mobile-drift: -8.80vw;
+    --mobile-duration: 6.22s;
+    --mobile-delay: -3.05s;
+    --mobile-size: 7.88px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 520deg;
+  }
+  bokeh:nth-child(15) {
+    --mobile-x: 56.36vw;
+    --mobile-drift: -10.42vw;
+    --mobile-duration: 5.89s;
+    --mobile-delay: -3.66s;
+    --mobile-size: 5.88px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 712deg;
+  }
+  bokeh:nth-child(16) {
+    --mobile-x: 54.41vw;
+    --mobile-drift: 2.10vw;
+    --mobile-duration: 8.04s;
+    --mobile-delay: -0.31s;
+    --mobile-size: 8.44px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 752deg;
+  }
+  bokeh:nth-child(17) {
+    --mobile-x: 94.51vw;
+    --mobile-drift: 6.42vw;
+    --mobile-duration: 4.99s;
+    --mobile-delay: -1.44s;
+    --mobile-size: 6.83px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 665deg;
+  }
+  bokeh:nth-child(18) {
+    --mobile-x: 66.28vw;
+    --mobile-drift: 15.64vw;
+    --mobile-duration: 6.55s;
+    --mobile-delay: -6.92s;
+    --mobile-size: 7.79px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 685deg;
+  }
+  bokeh:nth-child(19) {
+    --mobile-x: 3.92vw;
+    --mobile-drift: -2.21vw;
+    --mobile-duration: 8.35s;
+    --mobile-delay: -7.84s;
+    --mobile-size: 8.80px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 611deg;
+  }
+  bokeh:nth-child(20) {
+    --mobile-x: 69.11vw;
+    --mobile-drift: 4.29vw;
+    --mobile-duration: 6.68s;
+    --mobile-delay: -2.24s;
+    --mobile-size: 4.42px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 456deg;
+  }
+  bokeh:nth-child(21) {
+    --mobile-x: 80.69vw;
+    --mobile-drift: 7.01vw;
+    --mobile-duration: 5.45s;
+    --mobile-delay: -3.76s;
+    --mobile-size: 6.32px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 422deg;
+  }
+  bokeh:nth-child(22) {
+    --mobile-x: 88.57vw;
+    --mobile-drift: 16.85vw;
+    --mobile-duration: 5.37s;
+    --mobile-delay: -0.70s;
+    --mobile-size: 6.86px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 579deg;
+  }
+  bokeh:nth-child(23) {
+    --mobile-x: 2.77vw;
+    --mobile-drift: -15.10vw;
+    --mobile-duration: 7.61s;
+    --mobile-delay: -5.04s;
+    --mobile-size: 7.59px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 892deg;
+  }
+  bokeh:nth-child(24) {
+    --mobile-x: 76.34vw;
+    --mobile-drift: -4.48vw;
+    --mobile-duration: 7.95s;
+    --mobile-delay: -1.14s;
+    --mobile-size: 7.56px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 494deg;
+  }
+  bokeh:nth-child(25) {
+    --mobile-x: 56.09vw;
+    --mobile-drift: 16.61vw;
+    --mobile-duration: 5.52s;
+    --mobile-delay: -7.98s;
+    --mobile-size: 6.92px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 842deg;
+  }
+  bokeh:nth-child(26) {
+    --mobile-x: 63.94vw;
+    --mobile-drift: 11.39vw;
+    --mobile-duration: 7.57s;
+    --mobile-delay: -8.01s;
+    --mobile-size: 4.54px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 801deg;
+  }
+  bokeh:nth-child(27) {
+    --mobile-x: 72.43vw;
+    --mobile-drift: 6.70vw;
+    --mobile-duration: 7.80s;
+    --mobile-delay: -4.92s;
+    --mobile-size: 7.00px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 594deg;
+  }
+  bokeh:nth-child(28) {
+    --mobile-x: 11.76vw;
+    --mobile-drift: -5.03vw;
+    --mobile-duration: 6.48s;
+    --mobile-delay: -6.67s;
+    --mobile-size: 8.04px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 528deg;
+  }
+  bokeh:nth-child(29) {
+    --mobile-x: 76.10vw;
+    --mobile-drift: 15.18vw;
+    --mobile-duration: 7.98s;
+    --mobile-delay: -6.87s;
+    --mobile-size: 6.68px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 633deg;
+  }
+  bokeh:nth-child(30) {
+    --mobile-x: 6.65vw;
+    --mobile-drift: 9.87vw;
+    --mobile-duration: 7.03s;
+    --mobile-delay: -3.60s;
+    --mobile-size: 7.27px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 828deg;
+  }
+  bokeh:nth-child(31) {
+    --mobile-x: 57.79vw;
+    --mobile-drift: -2.99vw;
+    --mobile-duration: 5.15s;
+    --mobile-delay: -3.92s;
+    --mobile-size: 7.28px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 566deg;
+  }
+  bokeh:nth-child(32) {
+    --mobile-x: 63.21vw;
+    --mobile-drift: 8.99vw;
+    --mobile-duration: 4.99s;
+    --mobile-delay: -1.94s;
+    --mobile-size: 4.55px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 440deg;
+  }
+  bokeh:nth-child(33) {
+    --mobile-x: 17.59vw;
+    --mobile-drift: 13.63vw;
+    --mobile-duration: 7.60s;
+    --mobile-delay: -0.37s;
+    --mobile-size: 5.51px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 850deg;
+  }
+  bokeh:nth-child(34) {
+    --mobile-x: 19.09vw;
+    --mobile-drift: -6.37vw;
+    --mobile-duration: 8.17s;
+    --mobile-delay: -2.16s;
+    --mobile-size: 8.67px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 484deg;
+  }
+  bokeh:nth-child(35) {
+    --mobile-x: 55.62vw;
+    --mobile-drift: 15.83vw;
+    --mobile-duration: 5.72s;
+    --mobile-delay: -1.72s;
+    --mobile-size: 6.46px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 433deg;
+  }
+  bokeh:nth-child(36) {
+    --mobile-x: 75.10vw;
+    --mobile-drift: 13.51vw;
+    --mobile-duration: 6.57s;
+    --mobile-delay: -0.88s;
+    --mobile-size: 5.03px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 593deg;
+  }
+  bokeh:nth-child(37) {
+    --mobile-x: 32.60vw;
+    --mobile-drift: -2.49vw;
+    --mobile-duration: 4.98s;
+    --mobile-delay: -8.27s;
+    --mobile-size: 6.16px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 695deg;
+  }
+  bokeh:nth-child(38) {
+    --mobile-x: 42.17vw;
+    --mobile-drift: 13.40vw;
+    --mobile-duration: 5.45s;
+    --mobile-delay: -7.44s;
+    --mobile-size: 5.14px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 749deg;
+  }
+  bokeh:nth-child(39) {
+    --mobile-x: 96.87vw;
+    --mobile-drift: 16.66vw;
+    --mobile-duration: 8.01s;
+    --mobile-delay: -0.32s;
+    --mobile-size: 6.05px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 602deg;
+  }
+  bokeh:nth-child(40) {
+    --mobile-x: 62.34vw;
+    --mobile-drift: 1.46vw;
+    --mobile-duration: 8.18s;
+    --mobile-delay: -6.08s;
+    --mobile-size: 8.54px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 398deg;
+  }
+  bokeh:nth-child(41) {
+    --mobile-x: 63.62vw;
+    --mobile-drift: 17.00vw;
+    --mobile-duration: 6.39s;
+    --mobile-delay: -8.08s;
+    --mobile-size: 6.03px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 361deg;
+  }
+  bokeh:nth-child(42) {
+    --mobile-x: 38.53vw;
+    --mobile-drift: -12.74vw;
+    --mobile-duration: 8.27s;
+    --mobile-delay: -7.40s;
+    --mobile-size: 5.98px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 844deg;
+  }
+  bokeh:nth-child(43) {
+    --mobile-x: 4.84vw;
+    --mobile-drift: 7.27vw;
+    --mobile-duration: 6.40s;
+    --mobile-delay: -5.17s;
+    --mobile-size: 6.89px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 470deg;
+  }
+  bokeh:nth-child(44) {
+    --mobile-x: 41.94vw;
+    --mobile-drift: -3.85vw;
+    --mobile-duration: 7.50s;
+    --mobile-delay: -6.35s;
+    --mobile-size: 4.84px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 390deg;
+  }
+  bokeh:nth-child(45) {
+    --mobile-x: 48.85vw;
+    --mobile-drift: -14.32vw;
+    --mobile-duration: 6.40s;
+    --mobile-delay: -2.73s;
+    --mobile-size: 5.12px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 431deg;
+  }
+  bokeh:nth-child(46) {
+    --mobile-x: 21.57vw;
+    --mobile-drift: -14.79vw;
+    --mobile-duration: 5.13s;
+    --mobile-delay: -8.09s;
+    --mobile-size: 6.07px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 563deg;
+  }
+  bokeh:nth-child(47) {
+    --mobile-x: 48.91vw;
+    --mobile-drift: -15.45vw;
+    --mobile-duration: 5.80s;
+    --mobile-delay: -3.70s;
+    --mobile-size: 7.66px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 887deg;
+  }
+  bokeh:nth-child(48) {
+    --mobile-x: 51.14vw;
+    --mobile-drift: -2.41vw;
+    --mobile-duration: 8.31s;
+    --mobile-delay: -3.44s;
+    --mobile-size: 5.34px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 733deg;
+  }
+  bokeh:nth-child(49) {
+    --mobile-x: 39.11vw;
+    --mobile-drift: 3.49vw;
+    --mobile-duration: 6.44s;
+    --mobile-delay: -5.65s;
+    --mobile-size: 4.72px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 637deg;
+  }
+  bokeh:nth-child(50) {
+    --mobile-x: 69.32vw;
+    --mobile-drift: -10.25vw;
+    --mobile-duration: 7.71s;
+    --mobile-delay: -2.93s;
+    --mobile-size: 6.60px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 547deg;
+  }
+  bokeh:nth-child(51) {
+    --mobile-x: 1.07vw;
+    --mobile-drift: 11.75vw;
+    --mobile-duration: 4.90s;
+    --mobile-delay: -3.67s;
+    --mobile-size: 4.18px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 793deg;
+  }
+  bokeh:nth-child(52) {
+    --mobile-x: 26.74vw;
+    --mobile-drift: 10.57vw;
+    --mobile-duration: 7.83s;
+    --mobile-delay: -3.72s;
+    --mobile-size: 5.13px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 587deg;
+  }
+  bokeh:nth-child(53) {
+    --mobile-x: 60.19vw;
+    --mobile-drift: 5.66vw;
+    --mobile-duration: 7.17s;
+    --mobile-delay: -7.54s;
+    --mobile-size: 4.65px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 841deg;
+  }
+  bokeh:nth-child(54) {
+    --mobile-x: 69.23vw;
+    --mobile-drift: 14.69vw;
+    --mobile-duration: 5.37s;
+    --mobile-delay: -1.79s;
+    --mobile-size: 6.80px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 871deg;
+  }
+  bokeh:nth-child(55) {
+    --mobile-x: 6.46vw;
+    --mobile-drift: 7.96vw;
+    --mobile-duration: 6.61s;
+    --mobile-delay: -3.10s;
+    --mobile-size: 8.34px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 765deg;
+  }
+  bokeh:nth-child(56) {
+    --mobile-x: 57.22vw;
+    --mobile-drift: 15.31vw;
+    --mobile-duration: 6.63s;
+    --mobile-delay: -4.61s;
+    --mobile-size: 4.85px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 819deg;
+  }
+  bokeh:nth-child(57) {
+    --mobile-x: 70.30vw;
+    --mobile-drift: 11.83vw;
+    --mobile-duration: 7.58s;
+    --mobile-delay: -1.27s;
+    --mobile-size: 5.20px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 734deg;
+  }
+  bokeh:nth-child(58) {
+    --mobile-x: 58.89vw;
+    --mobile-drift: 0.44vw;
+    --mobile-duration: 6.51s;
+    --mobile-delay: -3.66s;
+    --mobile-size: 6.60px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 610deg;
+  }
+  bokeh:nth-child(59) {
+    --mobile-x: 70.94vw;
+    --mobile-drift: 13.61vw;
+    --mobile-duration: 8.36s;
+    --mobile-delay: -5.97s;
+    --mobile-size: 5.35px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 704deg;
+  }
+  bokeh:nth-child(60) {
+    --mobile-x: 19.92vw;
+    --mobile-drift: -13.59vw;
+    --mobile-duration: 8.08s;
+    --mobile-delay: -4.22s;
+    --mobile-size: 4.94px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 371deg;
+  }
+  bokeh:nth-child(61) {
+    --mobile-x: 32.37vw;
+    --mobile-drift: 14.55vw;
+    --mobile-duration: 5.88s;
+    --mobile-delay: -1.18s;
+    --mobile-size: 8.85px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 686deg;
+  }
+  bokeh:nth-child(62) {
+    --mobile-x: 76.53vw;
+    --mobile-drift: 1.80vw;
+    --mobile-duration: 8.19s;
+    --mobile-delay: -3.42s;
+    --mobile-size: 7.94px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 548deg;
+  }
+  bokeh:nth-child(63) {
+    --mobile-x: 78.19vw;
+    --mobile-drift: 6.84vw;
+    --mobile-duration: 5.77s;
+    --mobile-delay: -2.72s;
+    --mobile-size: 4.71px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 841deg;
+  }
+  bokeh:nth-child(64) {
+    --mobile-x: 70.55vw;
+    --mobile-drift: 14.17vw;
+    --mobile-duration: 5.15s;
+    --mobile-delay: -7.66s;
+    --mobile-size: 6.72px;
+    --mobile-color: #ef8d22;
+    --mobile-rotation: 398deg;
+  }
+  bokeh:nth-child(65) {
+    --mobile-x: 55.15vw;
+    --mobile-drift: 9.23vw;
+    --mobile-duration: 4.97s;
+    --mobile-delay: -1.11s;
+    --mobile-size: 4.47px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 668deg;
+  }
+  bokeh:nth-child(66) {
+    --mobile-x: 68.74vw;
+    --mobile-drift: -2.76vw;
+    --mobile-duration: 6.12s;
+    --mobile-delay: -0.99s;
+    --mobile-size: 7.78px;
+    --mobile-color: #b983ff;
+    --mobile-rotation: 446deg;
+  }
+  bokeh:nth-child(67) {
+    --mobile-x: 88.94vw;
+    --mobile-drift: 0.39vw;
+    --mobile-duration: 7.74s;
+    --mobile-delay: -5.61s;
+    --mobile-size: 5.30px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 434deg;
+  }
+  bokeh:nth-child(68) {
+    --mobile-x: 95.09vw;
+    --mobile-drift: -7.84vw;
+    --mobile-duration: 6.91s;
+    --mobile-delay: -1.77s;
+    --mobile-size: 7.25px;
+    --mobile-color: #fc85e1;
+    --mobile-rotation: 523deg;
+  }
+  bokeh:nth-child(69) {
+    --mobile-x: 12.09vw;
+    --mobile-drift: -15.74vw;
+    --mobile-duration: 5.15s;
+    --mobile-delay: -3.91s;
+    --mobile-size: 4.95px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 744deg;
+  }
+  bokeh:nth-child(70) {
+    --mobile-x: 68.48vw;
+    --mobile-drift: 9.53vw;
+    --mobile-duration: 7.76s;
+    --mobile-delay: -1.81s;
+    --mobile-size: 5.66px;
+    --mobile-color: #2bd8ff;
+    --mobile-rotation: 612deg;
+  }
+  bokeh:nth-child(71) {
+    --mobile-x: 61.66vw;
+    --mobile-drift: -4.13vw;
+    --mobile-duration: 7.71s;
+    --mobile-delay: -6.61s;
+    --mobile-size: 5.48px;
+    --mobile-color: #feff28;
+    --mobile-rotation: 452deg;
+  }
+  bokeh:nth-child(72) {
+    --mobile-x: 82.55vw;
+    --mobile-drift: -5.45vw;
+    --mobile-duration: 5.89s;
+    --mobile-delay: -4.78s;
+    --mobile-size: 4.79px;
+    --mobile-color: #9cef9d;
+    --mobile-rotation: 693deg;
+  }
+
+  @keyframes mobile-confetti-fall {
+    0% {
+      transform:
+        translate3d(0, -8vh, 0)
+        rotate(0deg);
+      opacity: 0;
+    }
+
+    8% {
+      opacity: 0.9;
+    }
+
+    88% {
+      opacity: 0.82;
+    }
+
+    100% {
+      transform:
+        translate3d(
+          var(--mobile-drift, 0),
+          122vh,
+          0
+        )
+        rotate(var(--mobile-rotation, 600deg));
+      opacity: 0;
+    }
+  }
+
+  @keyframes mobile-firework-bang {
+    to {
+      box-shadow:
+        45.24px -208.03px hsl(13, 100%, 50%),
+        75.40px -159.89px hsl(126, 100%, 50%),
+        -78.30px -199.91px hsl(53, 100%, 50%),
+        56.26px -21.27px hsl(280, 100%, 50%),
+        -118.90px -65.93px hsl(217, 100%, 50%),
+        -135.14px -232.39px hsl(48, 100%, 50%),
+        -80.04px -172.07px hsl(259, 100%, 50%),
+        34.22px -233.55px hsl(288, 100%, 50%),
+        -85.84px -28.81px hsl(333, 100%, 50%),
+        63.80px -79.27px hsl(215, 100%, 50%),
+        -79.46px -108.27px hsl(302, 100%, 50%),
+        -62.06px -0.97px hsl(4, 100%, 50%),
+        80.62px -2.13px hsl(82, 100%, 50%),
+        62.64px -115.81px hsl(175, 100%, 50%),
+        -62.06px -195.27px hsl(111, 100%, 50%),
+        139.78px -14.89px hsl(173, 100%, 50%),
+        -114.26px -213.83px hsl(195, 100%, 50%),
+        -116.00px -134.95px hsl(177, 100%, 50%),
+        34.80px -162.79px hsl(23, 100%, 50%),
+        71.92px -104.79px hsl(275, 100%, 50%),
+        -107.88px 47.75px hsl(194, 100%, 50%),
+        -121.22px -77.53px hsl(151, 100%, 50%),
+        101.50px -54.91px hsl(317, 100%, 50%),
+        118.32px 14.69px hsl(186, 100%, 50%),
+        26.68px -184.25px hsl(36, 100%, 50%),
+        -131.08px -45.05px hsl(117, 100%, 50%),
+        84.68px -155.25px hsl(41, 100%, 50%),
+        109.04px -172.07px hsl(52, 100%, 50%),
+        -31.90px -158.73px hsl(233, 100%, 50%),
+        44.08px 6.57px hsl(187, 100%, 50%),
+        -96.28px -131.47px hsl(182, 100%, 50%),
+        -82.36px -42.15px hsl(137, 100%, 50%),
+        63.80px 36.73px hsl(350, 100%, 50%),
+        47.56px -220.21px hsl(312, 100%, 50%),
+        44.08px -190.63px hsl(274, 100%, 50%),
+        71.92px -168.59px hsl(84, 100%, 50%),
+        -7.54px -128.57px hsl(139, 100%, 50%),
+        129.92px -51.43px hsl(353, 100%, 50%),
+        20.88px -176.13px hsl(351, 100%, 50%),
+        -48.14px 8.89px hsl(29, 100%, 50%),
+        -76.56px 2.51px hsl(17, 100%, 50%),
+        94.54px -147.71px hsl(206, 100%, 50%),
+        -64.96px -221.95px hsl(109, 100%, 50%),
+        126.44px 38.47px hsl(291, 100%, 50%),
+        115.42px -28.23px hsl(162, 100%, 50%),
+        -81.78px -46.79px hsl(256, 100%, 50%),
+        -27.26px 21.07px hsl(330, 100%, 50%),
+        -8.70px -198.75px hsl(136, 100%, 50%),
+        -103.24px -168.01px hsl(288, 100%, 50%),
+        15.08px -163.37px hsl(300, 100%, 50%),
+        -17.40px 25.13px hsl(299, 100%, 50%);
+    }
+  }
+
+  @keyframes mobile-firework-gravity {
+    to {
+      transform: translateY(105px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes mobile-firework-position {
+    0%,
+    19.9% {
+      margin-top: 44vh;
+      margin-left: 24vw;
+    }
+
+    20%,
+    39.9% {
+      margin-top: 54vh;
+      margin-left: 78vw;
+    }
+
+    40%,
+    59.9% {
+      margin-top: 37vh;
+      margin-left: 62vw;
+    }
+
+    60%,
+    79.9% {
+      margin-top: 58vh;
+      margin-left: 18vw;
+    }
+
+    80%,
+    99.9% {
+      margin-top: 45vh;
+      margin-left: 86vw;
+    }
+  }
+}
+
+/* En pantallas móviles muy pequeñas reducimos un poco los fuegos. */
+@media screen and (max-width: 390px) {
+  .pyro > .before,
+  .pyro > .after {
+    transform: scale(0.86);
+  }
+}
+
+/* Respeta la configuración de accesibilidad del dispositivo. */
+@media (prefers-reduced-motion: reduce) {
+  bokeh,
+  .pyro > .before,
+  .pyro > .after {
+    animation-duration: 10s;
+  }
+}
